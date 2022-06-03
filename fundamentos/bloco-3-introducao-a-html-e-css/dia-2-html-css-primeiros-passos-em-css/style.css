@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+ul {
+    background-color: blue;
+    font-style: italic;
+    line-height: 5;
+    text-align: center;
+    text-decoration: underline;
+}
+.corDeFundo {
+    background-color: rgb(500, 400, 150);
+    color: black;
+    font-weight: 600;
+}
+p{
+    font-size: 3em;
+}
+body {
+    font-size: 16px;
+    background-color: brown;
+}

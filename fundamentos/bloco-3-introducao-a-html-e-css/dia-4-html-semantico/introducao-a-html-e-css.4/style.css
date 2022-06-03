@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: bisque;
+}
+header{
+background-color: rgb(68, 68, 165);
+padding: 10px;
+}
+h1{
+    color: white;
+}
+nav{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+header nav{
+    color: white;
+}
+.imagem{
+    width: 410px;
+    border-radius: 3px;
+    margin: 15px;
+}
+
+#classificacao {
+position: absolute;
+left: 1200px;
+top: 150px;
+}
+
+#referencia{
+    margin: 30px;
+}
+aside{
+position: absolute;
+left: 1200px;
+top: 330px;
+}
+main{
+    background-color: bisque;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+footer{
+    text-align: center;
+    background-color: rgb(216, 199, 199);
+    padding: 50px;
+    font-size: large;
+}

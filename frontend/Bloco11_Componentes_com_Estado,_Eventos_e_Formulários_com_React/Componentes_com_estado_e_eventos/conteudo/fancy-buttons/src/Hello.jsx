@@ -1,12 +1,17 @@
 import React from 'react';
 
-function hello(){
-  console.log('Hello')
+class Hello extends React.Component{
+constructor(){
+  super()
+  this.hello = this.hello.bind(this);
 }
 
-class Hello extends React.Component {
+  hello(){
+    console.log(this);
+    console.log('Hello')
+  }
   render(){
-    return <button onClick={hello}>Hello</button>
+    return <button onClick={this.hello}>Hello</button>
   }
 }
 

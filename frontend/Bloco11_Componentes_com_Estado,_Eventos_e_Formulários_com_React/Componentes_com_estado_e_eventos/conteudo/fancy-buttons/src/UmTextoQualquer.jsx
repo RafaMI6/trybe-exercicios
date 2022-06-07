@@ -1,12 +1,32 @@
 import React from "react";
-
-function umTextoQualquer() {
-  console.log('um texto qualquer');
-}
+import './caracteristicasDoBotão.css'
 
 class UmTextoQualquer extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+      numeroDeClicks: 0
+    }
+    this.umTextoQualquer = this.umTextoQualquer.bind(this)
+  }
+  
+
+  umTextoQualquer() {
+    this.setState((numeroAntigo, _props) => ({
+      numeroDeClicks: numeroAntigo.numeroDeClicks + 1
+    }))
+  }
+  comportamento(number){
+    if(number % 2 === 0) {
+      console.log('verde');
+      return 'par'
+    }
+    console.log('branco')
+    return 'normal'
+  }
   render() {
-    return <button onClick={umTextoQualquer}>Um Texto Qualquer</button>
+    return <button onClick={this.umTextoQualquer}
+    className={this.comportamento(this.state.numeroDeClicks)}>{this.state.numeroDeClicks}</button>
   }
 }
 

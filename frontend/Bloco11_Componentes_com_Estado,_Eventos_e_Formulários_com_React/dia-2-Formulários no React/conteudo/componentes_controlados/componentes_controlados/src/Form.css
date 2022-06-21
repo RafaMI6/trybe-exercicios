@@ -1,0 +1,38 @@
+h1{
+  text-align: center;
+}
+.form{
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.vertical{
+  display: flex;
+  flex-direction: column;
+}
+label textarea {
+  margin: 10px 0px;
+  /* padding: 45px 0px; */
+  border-radius: 10px;
+  resize: none;
+}
+input {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#check {
+  margin: 5px 0px;
+  padding: 10px;
+  border-radius: 5px;
+}
+select{
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+select option {
+text-align: center;
+}
